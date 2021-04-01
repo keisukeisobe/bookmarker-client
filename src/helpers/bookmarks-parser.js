@@ -5,6 +5,7 @@ const parsers = [];
 
 parsers.push(require("./parsers/netscape.js"));
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default function(html, callback) {
   eachSeries(
     parsers,
